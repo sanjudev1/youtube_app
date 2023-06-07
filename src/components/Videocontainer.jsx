@@ -1,0 +1,27 @@
+import React, { useEffect,useState } from 'react'
+import { YOUTUBE_VIDEOS_API } from '../constants/apis'
+import VideoCard from './VideoCard'
+import Shimmer from './Shimmer'
+
+
+function Videocontainer() {
+  const [videos,setvideos] =useState([])
+  useEffect(()=>{
+    getData()
+ },[])
+
+ const getData=async()=>{
+   const GOOGLE_API_KEY=import.meta.env.VITE_GOOGLE_API_KEY
+   const data = await fetch(YOUTUBE_VIDEOS_API+GOOGLE_API_KEY)
+   const jsondata = await data.json()
+   setvideos(jsondata.items)  
+ }
+ if(videos.length===0) return <Shimmer/>
+  return (
+   <div className='flex flex-wrap'>
+     {videos?.map(video=><VideoCard key={video.id} info={video}/>)}
+    </div>
+  )
+}
+
+export default Videocontainer
