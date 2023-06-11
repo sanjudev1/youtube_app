@@ -12,7 +12,7 @@ function Videocontainer() {
  },[])
  const MenuOption=useSelector((store)=>store.app.isMenuOpen)
  const getData=async()=>{
-   const GOOGLE_API_KEY=import.meta.env.VITE_GOOGLE_API_KEY
+   const GOOGLE_API_KEY=import.meta.env.VITE_GOOGLE_SEARCH_API_KEY
    const data = await fetch(YOUTUBE_VIDEOS_API+GOOGLE_API_KEY)
    const jsondata = await data.json()
    setvideos(jsondata.items)  
