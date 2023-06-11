@@ -7,7 +7,7 @@ function Sidebar() {
     if(!MenuOption) return null;
 
   return (
-    <div className='p-5 shadow-lg col-span-1'>
+    <div className='pl-5 pt-2 pr-5 shadow-lg col-span-1 fixed bg-slate-50 overflow-auto text-black'>
       <ul className='font-medium border pb-2'>
         <li><Link to="/">Home</Link></li>
         <li>Shorts</li>
@@ -29,6 +29,17 @@ function Sidebar() {
         <li>LikedVideos</li>
         <li>ShowMore</li>
       </ul>
+      <h1 className='font-bold'>See More</h1>
+      <ul className='font-medium'>
+        <li>Library</li>
+        <li>History</li>
+        <li>YourVideos</li>
+        <li>WatchLater</li>
+        <li>LikedVideos</li>
+        <li>ShowMore</li>
+      </ul>
+      
+      
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 function Body() {
   return (
-    <div className='flex gird grid-flow-col'>
+    <div className='flex gird grid-flow-col mt-16 bg-black'>
       
       <Sidebar/>
       <Outlet/>
