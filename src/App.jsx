@@ -9,11 +9,12 @@ import {  Navigate, RouterProvider, createBrowserRouter} from 'react-router-dom'
 import Maincontainer from './components/Maincontainer'
 import WatchPlay from './components/WatchPlay'
 import SearchContainer from './components/SearchContainer'
-import SearchWatchPlay from './components/searchWatchPlay'
+import WatchPlaySearch from './components/WatchPlaySearch'
 
 
 
-const RouterPath =createBrowserRouter([{path:"/",element:<Body/>,children:[{path:"/",element:<Maincontainer/>},{path:"search",element:<SearchContainer/>,children:[{path:"*",element:<Navigate to="search"/>}]},{path:"watch",element:<WatchPlay/>},{path:"search/watch",element:<SearchWatchPlay/>}]}])
+
+const RouterPath =createBrowserRouter([{path:"/",element:<Body/>,children:[{path:"/",element:<Maincontainer/>},{path:"search",element:<SearchContainer/>,children:[{path:"*",element:<Navigate to="search"/>}]},{path:"watch",element:<WatchPlay/>},{path:"search/watch",element:<WatchPlaySearch/>}]}])
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import WatchPlay from './WatchPlay'
 
-function SearchWatchPlay() {
+function WatchPlaySearch() {
   return (
     <div>
       <WatchPlay/>
@@ -9,4 +9,4 @@ function SearchWatchPlay() {
   )
 }
 
-export default SearchWatchPlay
+export default WatchPlaySearch
