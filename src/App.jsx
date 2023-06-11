@@ -37,6 +37,7 @@ function App() {
             -video player
             -comments
             -subscriptions
+            -caching
            
       */}
       
