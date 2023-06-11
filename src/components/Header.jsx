@@ -28,7 +28,7 @@ function Header() {
   },[searchQuery])
 
   const getSuggestionsApi=async()=>{
-     const data=await fetch(YOUTUBE_SUGGESTION_API+searchQuery)
+     const data=await fetch(YOUTUBE_SUGGESTION_API+searchQuery+"&key="+import.meta.env.VITE_GOOGLE_SEARCH_API_KEY)
      const jsondata =await data.json()
      console.log(jsondata[1])
      jsondata[1].map(e=>{console.log(e)})

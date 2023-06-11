@@ -19,7 +19,7 @@ function Videocontainer() {
  }
  if(videos?.length===0) return <Shimmer/>
   return (
-   <div className={`flex flex-wrap mt-10 ${MenuOption===true && "ml-40"}` }>
+   <div className={`flex flex-wrap mt-10 m-2 ${MenuOption===true && "ml-44"}` }>
      {videos?.map(video=><VideoCard key={video.id} info={video}/>)}
     </div>
   )
