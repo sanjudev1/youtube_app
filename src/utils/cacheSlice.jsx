@@ -6,7 +6,7 @@ const cacheSlice =createSlice({
     initialState:{},
     reducers:{userCache:(state,action)=>{
         // state=Object.assign(state,action.payload)
-        return {...action.payload,...state}
+            return {...action.payload,...state}
 
     },clearCache:(state)=>{
         //const { [Object.keys(state).pop()]: _, ...newState}=state; return newState;
