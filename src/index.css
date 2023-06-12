@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.scroll-top {
+    scroll-margin-top: var(--header-height);
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: calc(100vh - var(--header-height));
+  }
+  :root {
+    --header-height: 64px; /* Replace with the actual height of your header */
+  }

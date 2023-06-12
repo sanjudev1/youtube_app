@@ -20,7 +20,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {spacing: {
+      '100vh': '100vh',
+    },},
   },
+  variants: {},
   plugins: [],
+
 }
+// tailwind.config.js
+

@@ -32,7 +32,7 @@ function WatchPlay() {
        
   
   return (
-    <div className='w-full'><div className='flex'><div className={(menuOption===true) ?"ml-44":"m-5"}>
+    <div className='w-full scroll-top'><div className='flex'><div className={(menuOption===true) ?"ml-44":"m-5"}>
       <iframe width="1024" 
       height="524" 
       src={"https://www.youtube.com/embed/"+path_id}
