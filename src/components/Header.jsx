@@ -68,7 +68,7 @@ function Header() {
       </div>
      
       <div className='col-span-1'>
-      <img className="h-10" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnPL1zW3xWnLePHIci-FRr8YsFF0Kh99rq3q9F4F_GJHu-dCxb7E2ZKsEEOF7LcsPgynU&usqp=CAU" alt="profile-icon"/>
+      <img className="h-10 rounded-3xl" src="https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci82MDNkNTNhMzY5MmFmODRiNjI3YmUyNTE4NjVjMmVhMj9zaXplPTUwJmRlZmF1bHQ9cmV0cm8ifQ.JhUuRa6nWz8LFGG_cHQrQ8dUzkasQARdpC8xEkGtcjE"/>
     </div>
     </div>
   )
