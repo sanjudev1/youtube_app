@@ -14,7 +14,7 @@ function SearchContainer() {
          getSearchRequest()
     },[])
     const getSearchRequest=async()=>{
-    const GOOGLE_API_KEY=import.meta.env.VITE_GOOGLE_SEARCH_API_KEY
+    const GOOGLE_API_KEY=import.meta.env.VITE_GOOGLE_API_KEY
     const data=await fetch(YOUTUBE_SEARCH_API+searchkey+"&key="+GOOGLE_API_KEY)
     const jsondata= await data.json()
     console.log(jsondata)
