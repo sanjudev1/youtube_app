@@ -9,10 +9,11 @@ import {  Navigate, RouterProvider, createBrowserRouter} from 'react-router-dom'
 import Maincontainer from './components/Maincontainer'
 import WatchPlay from './components/WatchPlay'
 import SearchContainer from './components/SearchContainer'
-import WatchPlaySearch from './components/WatchPlaySearch'
+// import WatchPlaySearch from './components/WatchPlaySearch'
+import { lazy } from 'react'
 
 
-
+const WatchPlaySearch= lazy(()=>import('./components/WatchPlaySearch'))
 
 const RouterPath =createBrowserRouter([{path:"/",element:<Body/>,children:[{path:"/",element:<Maincontainer/>},{path:"search",element:<SearchContainer/>,children:[{path:"*",element:<Navigate to="search"/>}]},{path:"watch",element:<WatchPlay/>},{path:"search/watch",element:<WatchPlaySearch/>}]}])
 
@@ -39,7 +40,7 @@ function App() {
             -comments
             -subscriptions
             -caching
-            -
+            -buldle chuncking,dynamic import,code spliting
            
       */}
       
