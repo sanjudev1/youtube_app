@@ -26,7 +26,7 @@ function Header() {
   }, [searchQuery]);
 
   const getSuggestionsApi = async () => {
-    const API_URL = 'http://localhost:3001/google-suggest';
+    const API_URL = 'http://localhost:8080/google-suggest';
     try {
       const data = await fetch(`${API_URL}?query=${searchQuery}`);
       const jsondata = await data.json();
@@ -48,7 +48,7 @@ function Header() {
       setShowSuggestions(false);
     }, 200);
   };
-  console.log(showsuggestions, 'show suggestions');
+
   return (
     <div className="grid grid-flow-col p-2 shadow-md fixed top-0 left-0 w-full bg-slate-50 z-10">
       <div className="flex col-span-1 cursor-pointer">
@@ -87,7 +87,7 @@ function Header() {
         </div>
 
         {suggestions.length !== 0 && showsuggestions && (
-          <div className=" boder bg-gray-100 rounded-lg shadow-lg w-[41rem] ml-2 py-3 fixed top-55 left-55 z-100">
+          <div className=" boder bg-gray-100 rounded-lg shadow-lg w-[35%] ml-[] py-[1%] fixed top-55 left-55 z-100">
             <ul>
               {suggestions.map((s) => (
                 <li className="hover:bg-gray-300 font-semibold" key={s}>
