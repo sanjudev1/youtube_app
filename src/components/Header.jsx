@@ -27,7 +27,7 @@ function Header() {
 
   const getSuggestionsApi = async () => {
     const API_URL =
-      'https://suggestqueries.google.com/complete/search?client=firefox&q=';
+      'https://suggestqueries.google.com/complete/search?client=firefox&q';
     try {
       const data = await fetch(`${API_URL}=${searchQuery}`);
       const jsondata = await data.json();
