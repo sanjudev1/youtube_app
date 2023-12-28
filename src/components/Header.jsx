@@ -27,9 +27,9 @@ function Header() {
 
   const getSuggestionsApi = async () => {
     const API_URL =
-      'https://suggestqueries.google.com/complete/search?client=firefox&q=${query}';
+      'https://suggestqueries.google.com/complete/search?client=firefox&q=';
     try {
-      const data = await fetch(`${API_URL}?query=${searchQuery}`);
+      const data = await fetch(`${API_URL}=${searchQuery}`);
       const jsondata = await data.json();
       setSuggestions(jsondata[1]);
       if (Object.keys(cachee).length > 20) {
