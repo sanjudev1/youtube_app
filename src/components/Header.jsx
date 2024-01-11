@@ -26,7 +26,7 @@ function Header() {
   }, [searchQuery]);
 
   const getSuggestionsApi = async () => {
-    const API_URL = 'https://thingproxy.freeboard.io/fetch/http://suggestqueries.google.com/complete/search?client=firefox&q');
+    const API_URL = 'https://thingproxy.freeboard.io/fetch/https://suggestqueries.google.com/complete/search?client=firefox&q';
     try {
       const data = await fetch(`${API_URL}=${searchQuery}`);
       const jsondata = await data.json();
