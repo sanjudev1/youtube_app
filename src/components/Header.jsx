@@ -26,7 +26,7 @@ function Header() {
   }, [searchQuery]);
 
   const getSuggestionsApi = async () => {
-    const API_URL = 'https://suggestqueries.google.com/complete/search?client=firefox&q';
+    const API_URL = 'https://prototype-verceldeployment-server.vercel.app/search?q';
     try {
       const data = await fetch(`${API_URL}=${searchQuery}`);
       const jsondata = await data.json();
